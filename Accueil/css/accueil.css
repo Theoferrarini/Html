@@ -1,0 +1,92 @@
+body {
+    background-image: url('fond\ pc\ anime.png');
+    background-size: cover;
+}
+
+audio {
+    width: 10%;
+}
+
+header .rainbow-text {
+    background-image: linear-gradient(to right, #00FFFF, #00CCFF, #0099FF, #0066FF, #0033FF, #FFA500, #FF8C00, #FF6347, #FF4500, #FF0000);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 48px;
+    text-align: center;
+}
+
+header {
+    font-family: "Apple Chancery", cursive;
+}
+
+ul.horizontal-list {
+    width: 100%;
+    color: #e70303;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul.horizontal-list li {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    font-size: 28px;
+}
+
+ul.horizontal-list li a {
+    text-decoration: none;
+    color: #0408f4;
+}
+
+ul.horizontal-list li a:hover {
+    color: #fc0000;
+}
+
+ul.horizontal-list li img {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    width: auto;
+    height: 350px;
+}
+
+ul.horizontal-list li:hover img {
+    display: block;
+}
+
+footer {
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00000052;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url('/Accueil/css/fond\ tel\ anime.jpg');
+        background-size: cover;
+    }
+    header .rainbow-text {
+        font-size: 36px;
+    }
+
+    ul.horizontal-list li {
+        font-size: 20px;
+    }
+
+    ul.horizontal-list li img {
+        height: 250px;
+    }
+
+    footer {
+        font-size: 25px;
+    }
+}
