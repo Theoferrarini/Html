@@ -1,0 +1,141 @@
+body { 
+  background-image: url('bleach\ fond\ pc.jpg');
+  background-size: cover;
+}
+
+audio {
+  width: 10%;
+}
+
+header .rainbow-text {
+  background-image: linear-gradient(to right, #00FFFF, #00CCFF, #0099FF, #0066FF, #0033FF, #FFA500, #FF8C00, #FF6347, #FF4500, #FF0000);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 48px;
+  text-align: center;
+}
+header {
+  font-family: "Apple Chancery", cursive;
+}
+
+ul.horizontal-list {
+  width: 100%;
+  color: #e70303;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul.horizontal-list li {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  font-size: 25px;
+}
+
+ul.horizontal-list li a {
+  text-decoration: none;
+  color: #0408f4;
+}
+
+ul.horizontal-list li a:hover {
+  color: #fc0000;
+}
+.characters-table {
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.characters-table {
+  margin: 20px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: center;
+  color: #ff0000;
+  font-size: 22px;
+}
+
+th{
+  background-color: #ffffff;
+}  
+img {
+  max-width: 100%;
+  max-height: 200px;
+}
+h2 {
+  color: #0a0a0a;
+  text-align: center;
+}
+::selection{
+  background-color : #000dff;
+  color : #fff
+}
+.characters-table {
+  margin: 20px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.259);
+  padding: 10px;
+}
+footer {
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  background-color: #00000052;
+  padding: 5px;
+  text-align: center;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  body {
+      background-image: url('/bleach/css/bleach\ fond\ tel.jpg');
+      background-size: cover;
+  }
+  header .rainbow-text {
+      font-size: 36px;
+  }
+
+  ul.horizontal-list li {
+      font-size: 10px;
+  }
+
+  ul.horizontal-list li img {
+      height: 250px;
+  }
+  .characters-table img {
+    max-width: 80%;
+    height: auto;
+}
+}
